@@ -1,0 +1,207 @@
+{
+  "enableTranslates": ["es", "en", "fr", "pt-br"],
+  "enableMainHeader": true,
+  "menuItems": [
+    {
+      "es": {
+        "title": "Inicio",
+        "link": "/es/mice"
+      },
+      "en": {
+        "title": "Home",
+        "link": "/en/mice"
+      },
+      "pt-br": {
+        "title": "Inicio",
+        "link": "/pt-br/mice"
+      },
+      "fr": {
+        "title": "Page d’accueil",
+        "link": "/fr/mice"
+      }
+    },
+    {
+      "es": {
+        "title": "Locaciones",
+        "link": "/es/mice/locaciones"
+      },
+      "en": {
+        "title": "Locations",
+        "link": "/en/mice/locaciones"
+      },
+      "pt-br": {
+        "title": "Locações",
+        "link": "/pt-br/mice/locaciones"
+      },
+      "fr": {
+        "title": "Places",
+        "link": "/fr/mice/locaciones"
+      }
+    },
+    {
+      "es": {
+        "title": "Proveedores",
+        "link": "/es/mice/proveedores"
+      },
+      "en": {
+        "title": "Suppliers",
+        "link": "/en/mice/proveedores"
+      },
+      "pt-br": {
+        "title": "Fornecedores",
+        "link": "/pt-br/mice/proveedores"
+      },
+      "fr": {
+        "title": "Fournisseurs",
+        "link": "/fr/mice/proveedores"
+      }
+    },
+    {
+      "es": {
+        "title": "¿POR QUÉ BOGOTÁ?",
+        "link": "/es/mice/por-que-bogota"
+      },
+      "en": {
+        "title": "Why Bogotá?",
+        "link": "/en/mice/por-que-bogota"
+      },
+      "pt-br": {
+        "title": "¿Por que Bogotá?",
+        "link": "/pt-br/mice/por-que-bogota"
+      },
+      "fr": {
+        "title": "POURQUOI BOGOTÁ?",
+        "link": "/fr/mice/por-que-bogota"
+      },
+      "children": [
+        {
+          "es": {
+            "title": "Bogotá en datos",
+            "link": "/es/mice/por-que-bogota"
+          },
+          "en": {
+            "title": "Bogotá in data",
+            "link": "/en/mice/por-que-bogota"
+          },
+          "pt-br": {
+            "title": "Bogotá nos fatos",
+            "link": "/pt-br/mice/por-que-bogota"
+          },
+          "fr": {
+            "title": "Bogotá en bref",
+            "link": "/fr/mice/por-que-bogota"
+          }
+        },
+        {
+          "es": {
+            "title": "Bioseguridad",
+            "link": "/es/mice/bioseguridad-1353"
+          },
+          "en": {
+            "title": "Biosecurity",
+            "link": "/en/mice/bioseguridad-1353"
+          },
+          "pt-br": {
+            "title": "Biossegurança",
+            "link": "/pt-br/mice/bioseguridad-1353"
+          },
+          "fr": {
+            "title": "Biosécurité",
+            "link": "/fr/mice/bioseguridad-1353"
+          }
+        },
+        {
+          "es": {
+            "title": "Emergencias",
+            "link": "/es/mice/emergencias-1952"
+          },
+          "en": {
+            "title": "Emergencies",
+            "link": "/en/mice/emergencias-1952"
+          },
+          "pt-br": {
+            "title": "Emergências",
+            "link": "/pt-br/mice/emergencias-1952"
+          },
+          "fr": {
+            "title": "Urgences",
+            "link": "/fr/mice/emergencias-1952"
+          }
+        },
+        {
+          "es": {
+            "title": "Aeropuerto",
+            "link": "/es/mice/aeropuerto-1351"
+          },
+          "en": {
+            "title": "Airport",
+            "link": "/en/mice/aeropuerto-1351"
+          },
+          "pt-br": {
+            "title": "Aeroporto",
+            "link": "/pt-br/mice/aeropuerto-1351"
+          },
+          "fr": {
+            "title": "Aéroport",
+            "link": "/fr/mice/aeropuerto-1351"
+          }
+        },
+
+        {
+          "es": {
+            "title": "Movilidad",
+            "link": "/es/mice/movilidad-1352"
+          },
+          "en": {
+            "title": "Mobility",
+            "link": "/en/mice/movilidad-1352"
+          },
+          "pt-br": {
+            "title": "Movilidade",
+            "link": "/pt-br/mice/movilidad-1352"
+          },
+          "fr": {
+            "title": "Mobilité",
+            "link": "/fr/mice/movilidad-1352"
+          }
+        },
+        {
+          "es": {
+            "title": "Seguridad en la ciudad",
+            "link": "/es/mice/seguridad-1951"
+          },
+          "en": {
+            "title": "Safety in the city",
+            "link": "/en/mice/seguridad-1951"
+          },
+          "pt-br": {
+            "title": "Segurança na cidade",
+            "link": "/pt-br/mice/seguridad-1951"
+          },
+          "fr": {
+            "title": "Sécurité dans la ville",
+            "link": "/fr/mice/seguridad-1951"
+          }
+        }
+      ]
+    },
+    {
+      "es": {
+        "title": "Volver a bogotadc.travel",
+        "link": "http://bogotadc.travel/"
+      },
+      "en": {
+        "title": "Back to bogotadc.travel",
+        "link": "http://bogotadc.travel/"
+      },
+      "pt-br": {
+        "title": "Voltar ao bogotadc.travel",
+        "link": "http://bogotadc.travel/"
+      },
+      "fr": {
+        "title": "Retourner à bogotadc.travel",
+        "link": "http://bogotadc.travel/"
+      }
+    }
+  ]
+}
