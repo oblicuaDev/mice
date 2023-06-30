@@ -3,6 +3,26 @@ var minfilters = 0;
 var capacityterms = ["maxaudit", "maxbanq", "maxaul", "maxu", "maxcoc"];
 var filtersoptions = [];
 var sliderobjects = [];
+function getQueryParamsFiltervalue() {
+  // Get the URL string
+  var urlString = window.location.href;
+  // Parse the URL string to create a URL object
+  var url = new URL(urlString);
+  // Get the value of the "id" parameter from the URL object
+  var filtervalue = url.searchParams.get("filtervalue");
+  return filtervalue;
+}
+function getQueryParamsFiltername() {
+  // Get the URL string
+  var urlString = window.location.href;
+  // Parse the URL string to create a URL object
+  var url = new URL(urlString);
+  // Get the value of the "id" parameter from the URL object
+  var filtervalue = url.searchParams.get("filtername");
+  return filtervalue;
+}
+const filtervalue = getQueryParamsFiltername();
+const filtername = getQueryParamsFiltervalue();
 $(document).ready(function () {
   if ($(".mice-home").length > 0) {
     setHome();
@@ -20,7 +40,6 @@ function setHome() {
           data[i].field_micelink != ""
             ? data[i].field_micelink
             : `/${actualLang}/mice`;
-        console.log(data[i].field_micelink != "");
         var strtemplate = `<a href="${link}" target="_blank"><img src="${absoluteURL(
           data[i].field_thumbnail
         )}" alt="imagen" /><h4>${data[i].title}</h4></a>`;
@@ -30,7 +49,6 @@ function setHome() {
     }
   });
   $.get("get/cases.php?lang=" + actualLang, function (data) {
-    console.log(data);
     var itscontent = $(".success-stories").find(".content");
     if (data.length > 0) {
       for (var i = 0; i < data.length; i++) {
@@ -122,8 +140,7 @@ function setCategory(cattype) {
               .find(".writtenval")
               .keypress(function (e) {
                 var charCode = e.which ? e.which : event.keyCode;
-                console.log(charCode);
-                console.log(String.fromCharCode(charCode));
+
                 if (
                   String.fromCharCode(charCode).match(/[^0-9]/g) &&
                   charCode != 13
@@ -189,11 +206,14 @@ function setCategory(cattype) {
             itscontent.append(strtemplate);
           }
 
-          //useFilters(cattype);
           if (counter == $(".filtergroup.checkboxes").length - 1) {
-            console.log("Termina el set de filtros");
-            console.log({ filtersoptions });
-            useFilters(cattype);
+            if (filtervalue && filtername) {
+              document
+                .querySelector(`input[value="${filtername}"]`)
+                .parentElement.click();
+            } else {
+              useFilters(cattype);
+            }
           }
           counter++;
           //

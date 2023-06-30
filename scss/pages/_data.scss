@@ -19,6 +19,7 @@
             padding-left:30px;
         }
     }
+    .column{
     article
     {
         border-radius:20px;
@@ -34,6 +35,12 @@
         {
             width: 300px;
         }
+        @media screen and (max-width:768px)
+        {
+            margin-left:0;
+            margin-right:0;
+            width: 100%;
+        }
     
         img
         {
@@ -44,8 +51,12 @@
         h1
         {
             color:#6dca8d;
-            font-size:4.2rem;
+            font-size:3.5rem;
             margin:10px 0;
+            @media screen and (max-width:768px)
+            {
+                font-size:3rem;
+            }
         }
         p
         {
@@ -53,4 +64,5 @@
         }
         
     }
+}
 }

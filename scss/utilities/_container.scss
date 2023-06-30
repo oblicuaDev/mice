@@ -5,11 +5,16 @@
   max-width: 1200px;
   margin: 0 auto;
   width:100%;
+  
 
 }
 .column
 {
   box-sizing: border-box;
+  @media  screen and (max-width:768px) {
+    padding-left:10px;
+    padding-right:10px;
+  }
 }
 .flex
 {

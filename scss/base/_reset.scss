@@ -308,3 +308,19 @@ textarea {
 textarea {
   box-shadow: 0;
 }
+
+
+.ui-accordion-header-icon{
+  display: none !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+  border: 0;
+    background: transparent;
+    font-weight: normal;
+}
+
+.ui-widget-content{
+  border: 0;
+  background: transparent;
+}

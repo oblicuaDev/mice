@@ -214,7 +214,6 @@
   color: #fff;
   max-width: 720px;
   margin: 0 auto 160px;
-  text-align: justify;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1149,6 +1148,32 @@
         transform: scale(1.05);
       }
     }
+
+    a.btn.orange {
+      background: #ff7c47;
+      background: linear-gradient(
+        to bottom,
+        #ff7c47 0%,
+        #ff8033 30%,
+        #d64c1f 60%,
+        #b7411a 100%
+      );
+      height: 40px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      border-radius: 50px;
+      justify-content: center;
+      font-family: "MuseoSans-900";
+      font-size: 16px;
+      margin: 60px auto 0;
+      color: #fff;
+      transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+      max-width: 240px;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
   }
   .intro {
     font-family: "MuseoSans-500";
@@ -1157,7 +1182,6 @@
     color: #fff;
     max-width: 720px;
     margin: 0 auto;
-    text-align: justify;
     margin-bottom: 160px;
   }
   .salas {
@@ -1619,7 +1643,7 @@
 .mice_body main .container .desc p {
   color: #fff;
   margin-bottom: 30px;
-  text-align: justify;
+
   font-size: 1.6rem;
   line-height: 2.2rem;
   text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.75);
@@ -1775,7 +1799,6 @@
 
 @media screen and (max-width: 1023px) {
   .mice_body .mice .container .message_mice_container p {
-    text-align: justify;
     margin: 0 auto 30px;
   }
 }
@@ -2751,7 +2774,6 @@
   color: #fff;
   max-width: 720px;
   margin: 0 auto 160px;
-  text-align: justify;
 }
 
 @media only screen and (max-width: 768px) {
@@ -3663,7 +3685,6 @@
   color: #fff;
   max-width: 720px;
   margin: 0 auto 160px;
-  text-align: justify;
 }
 
 .thecity h1 {
@@ -4223,7 +4244,7 @@
   margin: 0 auto;
   max-width: 785px;
   position: relative;
-  text-align: justify;
+
   width: 100%;
   z-index: 2;
 }
@@ -4461,7 +4482,7 @@
   font-family: "MuseoSans-500";
   font-size: 1.8rem;
   line-height: 3rem;
-  text-align: justify;
+
   max-width: 450px;
   margin: 0 auto;
 }
@@ -4661,7 +4682,7 @@
   font-family: "MuseoSans-500";
   font-size: 25px;
   line-height: 30px;
-  text-align: justify;
+
   max-width: 450px;
 }
 
@@ -4715,14 +4736,13 @@
   color: #fff;
   font-family: "MuseoSans-500";
   font-size: 18px;
-  text-align: justify;
 }
 
 @media only screen and (max-width: 768px) {
   .movilidad main .circle p {
     color: #fff;
     font-size: 14px;
-    text-align: justify;
+
     line-height: 22px;
   }
 }
@@ -4939,7 +4959,6 @@
   font-size: 1.8rem;
   line-height: 3rem;
   color: #fff;
-  text-align: justify;
 }
 
 @media only screen and (max-width: 768px) {
@@ -4950,7 +4969,6 @@
     font-size: 1.4rem;
     line-height: 2.2rem;
     color: #fff;
-    text-align: justify;
   }
 }
 .airport main .outer-wrapper {
@@ -5594,7 +5612,6 @@ div#c-6 span {
   color: #fff;
   max-width: 720px;
   margin: 0 auto 30px;
-  text-align: justify;
 }
 
 .bluemenu {
@@ -6150,12 +6167,12 @@ div#c-6 span {
 
 .internVenue-body .salas .right .gallery .disinfo,
 .internprovider-body .salas .right .gallery .disinfo {
-  background: black;
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0.9) 20%,
-    black 79%
+    #359e66 0%,
+    #5bae80 30%,
+    #69d27c 70%,
+    #6dd295 100%
   );
   border-radius: 29px 0 0 29px;
   display: flex;
@@ -6175,22 +6192,42 @@ div#c-6 span {
     border-radius: 0;
   }
 }
-.salas .right .gallery .disinfo:after {
-  content: "DISTRIBUCIONES DISPONIBLES";
+.salas .right .gallery .disinfo:before {
+  background-image: url(../img/arrowcircle.svg);
+  background-repeat: no-repeat;
+  content: "";
+  height: 22px;
+  left: 7px;
   position: absolute;
-  left: -100px;
-  top: 350px;
-  color: #fff;
-  transition: all .6s cubic-bezier(0.16, 1, 0.3, 1);
-  font-size: 16px;
-  font-family: "MuseoSans-700";
-  text-align: center;
+  top: 20px;
   transform: rotate(90deg);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 22px;
+}
+.salas .right .gallery .disinfo:after {
+  color: #fff;
+  font-family: "MuseoSans-700";
+  font-size: 16px;
+  left: -100px;
+  position: absolute;
+  text-align: center;
+  top: 350px;
+  transform: rotate(90deg);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .salas .right .gallery .disinfo:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.9) 20%,
+    black 79%
+  );
   right: 0;
   &:after {
     opacity: 0;
+  }
+  &:before {
+    transform: rotate(-90deg);
   }
 }
 .salas .right .gallery .disinfo::-webkit-scrollbar {
@@ -6901,4 +6938,23 @@ div#c-6 span {
   text-align: center;
   position: relative;
   z-index: 3;
+}
+
+small.recomendacion {
+  color: #8597a5;
+  column-span: all;
+  display: block;
+  font-family: "MuseoSans-700";
+  font-size: 1.1rem;
+  line-height: 2rem;
+  margin: 50px auto 0;
+  max-width: 460px;
+
+  width: 100%;
+  text-align-last: center;
+}
+
+.flex.infoButtons {
+  max-width: 580px;
+  margin: 0 auto;
 }

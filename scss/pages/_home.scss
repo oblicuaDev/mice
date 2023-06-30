@@ -1,4 +1,4 @@
-.home {
+.mice-home {
   main {
     .banner {
       align-items: center;
@@ -9,6 +9,10 @@
       min-height: 450px;
       position: relative;
       z-index: 1;
+      @media screen and (max-width: 768px) {
+        height: auto;
+        padding: 150px 0;
+      }
       img,
       video {
         height: 100%;
@@ -17,8 +21,12 @@
         border-radius: 0 0 150px 150px;
         overflow: hidden;
       }
+      video {
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
       .banner-links {
-        
         position: absolute;
         bottom: calc(-230px / 2);
         left: 50%;
@@ -27,17 +35,29 @@
         align-items: center;
         justify-content: center;
         gap: 40px;
+        @media screen and (max-width: 768px) {
+          position: relative;
+          bottom: 0;
+          left: 0;
+          transform: translateX(0);
+          flex-direction: column;
+        }
         li {
-          &:hover
-          {
-            position:relative;
-            top:-10px;
-            transition:all 0.3s;
+          &:hover {
+            position: relative;
+            top: -10px;
+            transition: all 0.3s;
           }
-          transition:all 0.3s;
-          position:relative;
-          top:0;
-          cursor:pointer;
+          @media screen and (max-width: 768px) {
+            border-radius: 10px;
+            height: 120px;
+            padding: 10px;
+            width: 100%;
+          }
+          transition: all 0.3s;
+          position: relative;
+          top: 0;
+          cursor: pointer;
           width: 230px;
           height: 230px;
           border-radius: 15px;
@@ -70,6 +90,11 @@
         rgba(26, 26, 26, 1) 80%,
         rgba(26, 26, 26, 1) 100%
       );
+      @media screen and (max-width: 768px) {
+        top: 0;
+        padding: 30px 10px;
+        background: transparent;
+      }
       h2 {
         text-align: center;
         font-size: 40px;
@@ -82,26 +107,40 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
+        @media screen and (max-width: 768px) {
+          justify-content: center;
+        }
+        .content.flex {
+          flex-wrap: nowrap;
+        }
+
         a {
-          &:hover
-          {
-            top:-10px;
-            transition:all 0.3s;
+          &:hover {
+            top: -10px;
+            transition: all 0.3s;
           }
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin:0 20px;
+          margin: 0 20px;
           justify-content: center;
-          position:relative;
-          top:0;
-          transition:all 0.3s;
+          position: relative;
+          top: 0;
+          transition: all 0.3s;
+          @media screen and (max-width: 768px) {
+            margin: 20px;
+            width: calc(50% - 40px);
+          }
           img {
             width: 186px;
             height: 186px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 15px;
+            @media screen and (max-width: 768px) {
+              height: 120px;
+              width: 120px;
+            }
           }
           h4 {
             font-size: 2.4rem;
@@ -110,6 +149,9 @@
             width: 80%;
             margin: 0 auto;
             text-align: center;
+            @media screen and (max-width: 768px) {
+              font-size: 2rem;
+            }
           }
         }
       }
@@ -143,16 +185,21 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin:20px;
+          margin: 20px;
           justify-content: center;
-          width:calc(33.333% - 40px);
+          width: calc(33.333% - 40px);
+          @media screen and (max-width: 768px) {
+            width: calc(50% - 40px);
+          }
           img {
-            
             height: 192px;
             object-fit: cover;
             border-radius: 20px;
             box-shadow: 0 0 20px #000;
             margin-bottom: 15px;
+            @media screen and (max-width: 768px) {
+              height: 100px;
+            }
           }
           b {
             font-size: 1.6rem;
@@ -169,6 +216,9 @@
             width: 80%;
             margin: 0 auto;
             text-align: center;
+            @media screen and (max-width: 768px) {
+              display: none;
+            }
           }
         }
       }
