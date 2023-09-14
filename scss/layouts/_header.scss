@@ -152,43 +152,4 @@ header {
       }
     }
   }
-  #menuBtn {
-    align-items: flex-end;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    width: 40px;
-    span,
-    small {
-      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    span {
-      background-color: #fff;
-      border-radius: 10px;
-      display: block;
-      height: 3px;
-      margin: 2px 0;
-      width: 100%;
-      border-radius: 25px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      &:nth-of-type(2) {
-        width: 80%;
-      }
-    }
-    small {
-      color: #fff;
-      display: block;
-      font-size: 1.1rem;
-      margin: 2px 0;
-      width: 100%;
-      text-align: right;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    }
-    &:hover {
-      span,
-      small {
-        margin: 4px 0;
-      }
-    }
-  }
 }
