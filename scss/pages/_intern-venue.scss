@@ -1557,7 +1557,6 @@
   }
 }
 
-@charset "UTF-8";
 .mice_body main {
   background: #1a1a1a;
   padding: 0;
@@ -2003,17 +2002,6 @@
   margin-right: 30px;
 }
 
-.mice_body footer {
-  padding: 250px ​0 30px;
-}
-
-@media only screen and (max-width: 768px) {
-  .mice_body footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
 .mice_body footer::before {
   background-image: url("../img/ba-curve_black.svg");
   background-position: top;
@@ -2550,13 +2538,6 @@
   z-index: 2;
 }
 
-@media only screen and (max-width: 768px) {
-  .venuesList-body footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
 .internVenue-body main,
 .internprovider-body main {
   background: #1a1a1a;
@@ -4047,13 +4028,6 @@
   z-index: 2;
 }
 
-@media only screen and (max-width: 768px) {
-  .thecity footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
 .casosexito main {
   min-height: 100vh;
   background: #0f0f0f;
@@ -4073,13 +4047,6 @@
   margin: 50px auto 160px;
 }
 
-@media only screen and (max-width: 768px) {
-  .casosexito footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
 .grid-stories {
   display: flex;
   flex-wrap: wrap;
@@ -4420,13 +4387,6 @@
   z-index: 2;
 }
 
-@media only screen and (max-width: 768px) {
-  .internStorie footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
 .bioseguridad footer::before {
   background-image: url("../img/ba-curve_black.svg");
   background-position: top;
@@ -4599,31 +4559,6 @@
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 768px) {
-  .bioseguridad footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
-.movilidad footer {
-  z-index: 5;
-}
-
-.movilidad footer::before {
-  background-image: url("../img/ba-curve_black.svg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: -1px;
-  width: 100%;
-  z-index: 2;
-}
-
 .movilidad main {
   padding-top: 120px;
   min-height: 100vh;
@@ -4762,13 +4697,7 @@
     text-align: center;
   }
 }
-@media only screen and (max-width: 768px) {
-  .movilidad footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
+
 .airport main {
   min-height: 1340px;
   background: #1a1a1a;
@@ -5012,13 +4941,6 @@
   z-index: 2;
 }
 
-@media only screen and (max-width: 768px) {
-  .airport footer {
-    padding: 50px 0;
-    margin: 0;
-    height: auto;
-  }
-}
 button.moreItems {
   background-color: transparent;
   display: block;
