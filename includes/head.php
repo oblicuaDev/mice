@@ -10,12 +10,12 @@ if (file_exists("includes/bogota.php")) {
 }
   $bogota = new bogota(isset($_GET["lang"]) ? $_GET["lang"]  : 'es' );
   include "includes/mice.php";
-  $mice = new mice(isset($_GET["lang"]) ? $_GET["lang"]  : 'es' );
+  $mice = new mice(isset($_GET["lang"]) ? $_GET["lang"]  : 'en' );
 
 ?>
 <?php if (file_exists("includes/bogota.php")) { ?>
 <!DOCTYPE html>
-<html lang="<?= isset($_GET["lang"]) ? $_GET["lang"]  : 'es'?>">
+<html lang="<?= isset($_GET["lang"]) ? $_GET["lang"]  : 'en'?>">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,10 +27,8 @@ if (file_exists("includes/bogota.php")) {
     <meta property="og:url" content=" url" />
     <meta property="og:image" content=" img/ventajas.jpg" />
     <meta property="og:description" content="description" />
-    <title>MICE - BogotaDC.travel</title>
-    
+    <title>MICE - BogotaDC.travel</title>    
     <link rel="canonical" href="url" />
-    <meta name="description" content="description" />
   </head>
 <?php }?>
   <script>

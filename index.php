@@ -42,7 +42,7 @@
         </ul>
       </section>
       <section class="known loading">
-        <h2><?= $mice->miceinfo->field_mice_ui_11; ?></h2>
+        <h1><?= $mice->miceinfo->field_mice_ui_11; ?></h1>
         <div class="loader"></div>
 
                 <div class="container ">
@@ -52,11 +52,8 @@
       <section class="success-stories loading">
         <h2><?= $mice->miceinfo->field_mice_ui_16; ?></h2>
         <div class="loader"></div>
-        <div class="container">
-        <div class="content flex"></div>
-         
-            </div>
-        </div>
+        <div class="container"></div>
+        <div class="content flex"></div>                  
       </section>
     </main>
   <? include 'includes/imports.php'?>

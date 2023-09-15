@@ -53,7 +53,7 @@ function setHome() {
     if (data.length > 0) {
       for (var i = 0; i < data.length; i++) {
         var strtemplate =
-          `<a href=""
+          `<a href="#"
         ><img
           src="` +
           absoluteURL(data[i].field_thumbnail) +
@@ -442,7 +442,7 @@ if (document.querySelector(".internprovider-body")) {
         const principalImage = document.querySelector("#principal_img");
         principalImage.innerHTML = `<img src="${
           data[0] != "" ? absoluteURL(data[0]) : "../img/noimg.png"
-        }" alt=""/>`;
+        }" alt="imagen principal<"/>`;
         $(".imageText").text(
           document.querySelector("#principal_img img").getAttribute("alt")
         );
@@ -450,7 +450,7 @@ if (document.querySelector(".internprovider-body")) {
         data.forEach((image, i) => {
           let templateImages = `<li class="${i == 0 && "active"}"><img src="${
             image != "" ? absoluteURL(image) : "../img/noimg.png"
-          }" alt=""/></li>`;
+          }" alt="imagen galeria"/></li>`;
 
           galleryUlContainer.innerHTML += templateImages;
         });
@@ -486,7 +486,7 @@ if (document.querySelector(".internprovider-body")) {
         data.forEach((image, i) => {
           let templateImages = `<li><img src="${absoluteURL(
             image
-          )}" alt="" /></li>`;
+          )}" alt="imagen" /></li>`;
           galleryUlContainer.innerHTML += templateImages;
         });
       })
@@ -767,7 +767,7 @@ if (document.querySelector(".internVenue-body")) {
                   principalImage.classList.add("loading");
                   principalImage.innerHTML = `<img src="${absoluteURL(
                     dataSalon.field_salon_img
-                  )}" alt="" />`;
+                  )}" alt="salon" />`;
                   // $(".galleryVenue.gallery .imageText").text(
                   //   document
                   //     .querySelector("#salon_principal_img img")
@@ -958,13 +958,13 @@ if (document.querySelector(".internVenue-body")) {
           if (principalImage) {
             principalImage.innerHTML = `<img src="${absoluteURL(
               data[0]
-            )}" alt="" />`;
+            )}" alt="imagen galeria" />`;
             $(".gallery.others .imageText").text("");
             galleryUlContainer.innerHTML = "";
             data.forEach((image, i) => {
               let templateImages = `<li class="${
                 i == 0 && "active"
-              }"><img src="${absoluteURL(image)}" alt="" /></li>`;
+              }"><img src="${absoluteURL(image)}" alt="galeria" /></li>`;
               galleryUlContainer.innerHTML += templateImages;
             });
           }
@@ -1134,13 +1134,13 @@ if (document.querySelector(".internVenue-body")) {
       if (principalImage) {
         principalImage.innerHTML = `<img src="${absoluteURL(
           data[0]
-        )}" alt="" />`;
+        )}" alt="locacion" />`;
         $(".gallery.others .imageText").text("");
         galleryUlContainer.innerHTML = "";
         data.forEach((image, i) => {
           let templateImages = `<li class="${
             i == 0 && "active"
-          }"><img src="${absoluteURL(image)}" alt="" /></li>`;
+          }"><img src="${absoluteURL(image)}" alt="imagen" /></li>`;
           galleryUlContainer.innerHTML += templateImages;
         });
       }
