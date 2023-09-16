@@ -42,7 +42,7 @@
         </ul>
       </section>
       <section class="known loading">
-        <h1><?= $mice->miceinfo->field_mice_ui_11; ?></h1>
+        <h2><?= $mice->miceinfo->field_mice_ui_11; ?></h2>
         <div class="loader"></div>
 
                 <div class="container ">
