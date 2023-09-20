@@ -1002,7 +1002,7 @@ if (document.querySelector(".internVenue-body")) {
         );
         galleryUlContainer.innerHTML = "";
         data.forEach((image, i) => {
-          let templateImages = `<li><img src="${absoluteURL(image)}"/></li>`;
+          let templateImages = `<li><img src="${absoluteURL(image)}" alt= "imagen galeria"/></li>`;
           galleryUlContainer.innerHTML += templateImages;
         });
       })
