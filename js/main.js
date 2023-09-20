@@ -1138,9 +1138,9 @@ if (document.querySelector(".internVenue-body")) {
         $(".gallery.others .imageText").text("");
         galleryUlContainer.innerHTML = "";
         data.forEach((image, i) => {
-          let templateImages = `<ul><li class="${
+          let templateImages = `<li class="${
             i == 0 && "active"
-          }"><img src="${absoluteURL(image)}" alt="imagen" /></li></ul>`;
+          }"><img src="${absoluteURL(image)}" alt="imagen" /></li>`;
           galleryUlContainer.innerHTML += templateImages;
         });
       }
