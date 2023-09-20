@@ -534,7 +534,7 @@ if (document.querySelector(".internVenue-body")) {
         salonGalleryUlContainer.innerHTML = "";
         let templateImages = `<li class="active"><img src="${absoluteURL(
           data[0].field_salon_img
-        )}" /></li>`;
+        )}" alt="galeria"/></li>`;
         let templateImages360 = `<li class="view360" data-room="${data[0].field_room360}"><img src="img/360view.svg"></li>`;
         data.forEach((salon, index) => {
           infoSalones.push({
