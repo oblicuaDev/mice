@@ -535,7 +535,7 @@ if (document.querySelector(".internVenue-body")) {
         let templateImages = `<li class="active"><img src="${absoluteURL(
           data[0].field_salon_img
         )}" alt="galeria"/></li>`;
-        let templateImages360 = `<li class="view360" data-room="${data[0].field_room360}"><img src="img/360view.svg"></li>`;
+        let templateImages360 = `<li class="view360" data-room="${data[0].field_room360}"><img src="img/360view.svg" alt="imagen galeria"></li>`;
         data.forEach((salon, index) => {
           infoSalones.push({
             idsalon: salon.nid,
