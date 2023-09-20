@@ -42,7 +42,7 @@ function setHome() {
             : `/${actualLang}/mice`;
         var strtemplate = `<a href="${link}" target="_blank"><img src="${absoluteURL(
           data[i].field_thumbnail
-        )}" alt="imagen" /><h4>${data[i].title}</h4></a>`;
+        )}" alt="imagen" /><h1>${data[i].title}</h1></a>`;
         itscontent.append(strtemplate);
       }
       $(".known").removeClass("loading");
@@ -735,7 +735,7 @@ if (document.querySelector(".internVenue-body")) {
               var src = $($(e.target).children("img")).attr("src");
               document.querySelector(
                 "#salon_principal_img"
-              ).innerHTML = `<img src="${src}" width="1500" height="1001" alt="Hotel Cosmos 100 - SATURNO 1" typeof="foaf:Image" class="image-style-web">`;
+              ).innerHTML = `<img src="${src}" width="1500" height="1001" alt="Four Seasons Casa Medina" typeof="foaf:Image" class="image-style-web">`;
             });
           });
         document.querySelectorAll(".btn.btn-sala").forEach((el) => {
@@ -759,8 +759,8 @@ if (document.querySelector(".internVenue-body")) {
                   salonGalleryUlContainer.innerHTML = "";
                   let templateImages = `<li class="active imagesMini"><img src="${absoluteURL(
                     dataSalon.field_salon_img
-                  )}"/></li>`;
-                  let templateImages360 = `<li class="view360" data-room="${dataSalon.field_room360}"><img src="img/360view.svg"></li>`;
+                  )}" alt="salon principal"/></li>`;
+                  let templateImages360 = `<li class="view360" data-room="${dataSalon.field_room360}"><img src="img/360view.svg"> alt="salon"</li>`;
                   const principalImage = document.querySelector(
                     "#salon_principal_img"
                   );
@@ -934,7 +934,7 @@ if (document.querySelector(".internVenue-body")) {
                   var src = $($(e.target).children("img")).attr("src");
                   document.querySelector(
                     "#salon_principal_img"
-                  ).innerHTML = `<img src="${src}" width="1500" height="1001" alt="Hotel Cosmos 100 - SATURNO 1" typeof="foaf:Image" class="image-style-web">`;
+                  ).innerHTML = `<img src="${src}" width="1500" height="1001" alt="Four Seasons Casa Medina" typeof="foaf:Image" class="image-style-web">`;
                 });
                 setTimeout(() => {
                   document.querySelector(
