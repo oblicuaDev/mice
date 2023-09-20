@@ -58,6 +58,16 @@
                 font-size:3rem;
             }
         }
+        h2
+        {
+            color:#6dca8d;
+            font-size:2.5rem;
+            margin:10px 0;
+            @media screen and (max-width:768px)
+            {
+                font-size:3rem;
+            }
+        } 
         p
         {
             font-size:1.4em;

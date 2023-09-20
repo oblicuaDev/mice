@@ -11,7 +11,7 @@ $data = $mice->getData();
             <?php for($i=0;$i<count($data);$i++){ ?>
             <article class="w_25 graybg">
                 <img src="<?php echo $mice->absoluteURL($data[$i]->field_thumbnail); ?>" alt="<?php echo $data[$i]->title; ?>" />
-                <h1 class="fw900 uppercase"><?php echo $data[$i]->field_highlight; ?></h1>
+                <h2 class="fw900 uppercase"><?php echo $data[$i]->field_highlight; ?></h2>
                 <p><?php echo $data[$i]->field_title; ?></p>
             </article>
                 <?php } ?>
