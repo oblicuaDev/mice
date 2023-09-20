@@ -580,7 +580,7 @@ if (document.querySelector(".internVenue-body")) {
         const principalImage = document.querySelector("#salon_principal_img");
         principalImage.innerHTML = `<img src="${absoluteURL(
           data[0].field_salon_img
-        )}" />`;
+        )}" alt="salon" />`;
         $(".galleryVenue.gallery .imageText").text("");
 
         salonGalleryUlContainer.innerHTML += templateImages;
