@@ -1081,7 +1081,7 @@ function relVenues(type, zone, aforo) {
             }" alt="${venue.title}" class="lazyload">
               <div class="data">
                 <div>
-                  <h2>${venue.title}</h2>
+                  <h4>${venue.title}</h4>
                 </div>
                 <div class="flex">
                 ${
