@@ -7,12 +7,12 @@
     <div class="column flex w_100">
         <aside class="column w_25 filters graybg m_outter">
                 <button class="fw500" id="resetfilters"><?=$mice->miceinfo->field_mice_ui_34?></button>
-                <h3 class="fw700"><?=$mice->miceinfo->field_mice_ui_35?></h3>
+                <h2 class="fw700"><?=$mice->miceinfo->field_mice_ui_35?></h2>
                 
 
                 <div class="filtergroup checkboxes open" data-filterid="criterios_venues">
                     
-                    <h4 class="fw700"><span class="arrow"></span><?=$mice->miceinfo->field_mice_ui_36?></h4>
+                    <h3 class="fw700"><span class="arrow"></span><?=$mice->miceinfo->field_mice_ui_36?></h3>
                     <div class="loader"></div>
                     <div class="content">
                     </div>
@@ -26,13 +26,13 @@
                 </div>
                 <div class="filtergroup checkboxes color open" data-filterid="certificaciones_de_venues">
                     
-                    <h4 class="fw700"><span class="arrow"></span><?=$mice->miceinfo->field_mice_ui_22?></h4>
+                    <h5 class="fw700"><span class="arrow"></span><?=$mice->miceinfo->field_mice_ui_22?></h5>
                     <div class="loader"></div>
                     <div class="content">
                     </div>
                 </div>
                 <div class="filtergroup open">
-                    <h4 class="fw700"><span class="arrow"></span><?=$mice->miceinfo->field_mice_ui_5?></h4>
+                    <h6 class="fw700"><span class="arrow"></span><?=$mice->miceinfo->field_mice_ui_5?></h6>
                     <div class="loader"></div>
                     <div class="content">
                         <?php 

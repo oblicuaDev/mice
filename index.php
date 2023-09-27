@@ -54,9 +54,9 @@
         <div class="loader"></div>
         <div class="container">
         <div class="content flex"></div>
-         
+
             </div>
-        </div>
+        </div>                  
       </section>
     </main>
   <? include 'includes/imports.php'?>

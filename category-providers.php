@@ -7,12 +7,12 @@
     <div class="column flex w_100">
         <aside class="column w_25 filters graybg m_outter">
                 <button class="fw500" id="resetfilters"><?=$mice->miceinfo->field_mice_ui_34?></button>
-                <h3 class="fw700"><?=$mice->miceinfo->field_mice_ui_35?></h3>
+                <h2 class="fw700"><?=$mice->miceinfo->field_mice_ui_35?></h2>
                 
 
                 <div class="filtergroup checkboxes open" data-filterid="provider_type">
                     
-                    <h4 class="fw700"><span class="arrow"></span>Tipo de proveedor</h4>
+                    <h3 class="fw700"><span class="arrow"></span>Tipo de proveedor</h3>
                     <div class="loader"></div>
                     <div class="content">
                     </div>

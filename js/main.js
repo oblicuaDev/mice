@@ -42,7 +42,7 @@ function setHome() {
             : `/${actualLang}/mice`;
         var strtemplate = `<a href="${link}" target="_blank"><img src="${absoluteURL(
           data[i].field_thumbnail
-        )}" alt="imagen" /><h4>${data[i].title}</h4></a>`;
+        )}" alt="imagen" /><h1>${data[i].title}</h1></a>`;
         itscontent.append(strtemplate);
       }
       $(".known").removeClass("loading");
@@ -53,7 +53,7 @@ function setHome() {
     if (data.length > 0) {
       for (var i = 0; i < data.length; i++) {
         var strtemplate =
-          `<a href=""
+          `<a href="#"
         ><img
           src="` +
           absoluteURL(data[i].field_thumbnail) +
@@ -442,7 +442,7 @@ if (document.querySelector(".internprovider-body")) {
         const principalImage = document.querySelector("#principal_img");
         principalImage.innerHTML = `<img src="${
           data[0] != "" ? absoluteURL(data[0]) : "../img/noimg.png"
-        }" alt=""/>`;
+        }" alt="imagen principal<"/>`;
         $(".imageText").text(
           document.querySelector("#principal_img img").getAttribute("alt")
         );
@@ -450,7 +450,7 @@ if (document.querySelector(".internprovider-body")) {
         data.forEach((image, i) => {
           let templateImages = `<li class="${i == 0 && "active"}"><img src="${
             image != "" ? absoluteURL(image) : "../img/noimg.png"
-          }" alt=""/></li>`;
+          }" alt="imagen galeria"/></li>`;
 
           galleryUlContainer.innerHTML += templateImages;
         });
@@ -486,7 +486,7 @@ if (document.querySelector(".internprovider-body")) {
         data.forEach((image, i) => {
           let templateImages = `<li><img src="${absoluteURL(
             image
-          )}" alt="" /></li>`;
+          )}" alt="imagen" /></li>`;
           galleryUlContainer.innerHTML += templateImages;
         });
       })
@@ -534,8 +534,8 @@ if (document.querySelector(".internVenue-body")) {
         salonGalleryUlContainer.innerHTML = "";
         let templateImages = `<li class="active"><img src="${absoluteURL(
           data[0].field_salon_img
-        )}" /></li>`;
-        let templateImages360 = `<li class="view360" data-room="${data[0].field_room360}"><img src="img/360view.svg"></li>`;
+        )}" alt="galeria"/></li>`;
+        let templateImages360 = `<li class="view360" data-room="${data[0].field_room360}"><img src="img/360view.svg" alt="imagen galeria"></li>`;
         data.forEach((salon, index) => {
           infoSalones.push({
             idsalon: salon.nid,
@@ -580,7 +580,7 @@ if (document.querySelector(".internVenue-body")) {
         const principalImage = document.querySelector("#salon_principal_img");
         principalImage.innerHTML = `<img src="${absoluteURL(
           data[0].field_salon_img
-        )}" />`;
+        )}" alt="salon" />`;
         $(".galleryVenue.gallery .imageText").text("");
 
         salonGalleryUlContainer.innerHTML += templateImages;
@@ -735,7 +735,7 @@ if (document.querySelector(".internVenue-body")) {
               var src = $($(e.target).children("img")).attr("src");
               document.querySelector(
                 "#salon_principal_img"
-              ).innerHTML = `<img src="${src}" width="1500" height="1001" alt="Hotel Cosmos 100 - SATURNO 1" typeof="foaf:Image" class="image-style-web">`;
+              ).innerHTML = `<img src="${src}" width="1500" height="1001" alt="Four Seasons Casa Medina" typeof="foaf:Image" class="image-style-web">`;
             });
           });
         document.querySelectorAll(".btn.btn-sala").forEach((el) => {
@@ -759,15 +759,15 @@ if (document.querySelector(".internVenue-body")) {
                   salonGalleryUlContainer.innerHTML = "";
                   let templateImages = `<li class="active imagesMini"><img src="${absoluteURL(
                     dataSalon.field_salon_img
-                  )}"/></li>`;
-                  let templateImages360 = `<li class="view360" data-room="${dataSalon.field_room360}"><img src="img/360view.svg"></li>`;
+                  )}" alt="salon principal"/></li>`;
+                  let templateImages360 = `<li class="view360" data-room="${dataSalon.field_room360}"><img src="img/360view.svg"> alt="salon"</li>`;
                   const principalImage = document.querySelector(
                     "#salon_principal_img"
                   );
                   principalImage.classList.add("loading");
                   principalImage.innerHTML = `<img src="${absoluteURL(
                     dataSalon.field_salon_img
-                  )}" alt="" />`;
+                  )}" alt="salon" />`;
                   // $(".galleryVenue.gallery .imageText").text(
                   //   document
                   //     .querySelector("#salon_principal_img img")
@@ -934,7 +934,7 @@ if (document.querySelector(".internVenue-body")) {
                   var src = $($(e.target).children("img")).attr("src");
                   document.querySelector(
                     "#salon_principal_img"
-                  ).innerHTML = `<img src="${src}" width="1500" height="1001" alt="Hotel Cosmos 100 - SATURNO 1" typeof="foaf:Image" class="image-style-web">`;
+                  ).innerHTML = `<img src="${src}" width="1500" height="1001" alt="Four Seasons Casa Medina" typeof="foaf:Image" class="image-style-web">`;
                 });
                 setTimeout(() => {
                   document.querySelector(
@@ -958,13 +958,13 @@ if (document.querySelector(".internVenue-body")) {
           if (principalImage) {
             principalImage.innerHTML = `<img src="${absoluteURL(
               data[0]
-            )}" alt="" />`;
+            )}" alt="imagen galeria" />`;
             $(".gallery.others .imageText").text("");
             galleryUlContainer.innerHTML = "";
             data.forEach((image, i) => {
               let templateImages = `<li class="${
                 i == 0 && "active"
-              }"><img src="${absoluteURL(image)}" alt="" /></li>`;
+              }"><img src="${absoluteURL(image)}" alt="galeria" /></li>`;
               galleryUlContainer.innerHTML += templateImages;
             });
           }
@@ -1002,7 +1002,7 @@ if (document.querySelector(".internVenue-body")) {
         );
         galleryUlContainer.innerHTML = "";
         data.forEach((image, i) => {
-          let templateImages = `<li><img src="${absoluteURL(image)}"/></li>`;
+          let templateImages = `<li><img src="${absoluteURL(image)}" alt= "imagen galeria"/></li>`;
           galleryUlContainer.innerHTML += templateImages;
         });
       })
@@ -1134,13 +1134,13 @@ if (document.querySelector(".internVenue-body")) {
       if (principalImage) {
         principalImage.innerHTML = `<img src="${absoluteURL(
           data[0]
-        )}" alt="" />`;
+        )}" alt="locacion" />`;
         $(".gallery.others .imageText").text("");
         galleryUlContainer.innerHTML = "";
         data.forEach((image, i) => {
           let templateImages = `<li class="${
             i == 0 && "active"
-          }"><img src="${absoluteURL(image)}" alt="" /></li>`;
+          }"><img src="${absoluteURL(image)}" alt="imagen" /></li>`;
           galleryUlContainer.innerHTML += templateImages;
         });
       }

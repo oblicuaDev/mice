@@ -5,7 +5,7 @@ $data = $mice->getData();
 ?>
 
 <div id="mobile"></div>
-    <h1 class="fw900 uppercase center title"><img src="img/btalogo.svg" width="200" /><span>¿Por qué bogotá?</span></h1>
+    <h1 class="fw900 uppercase center title"><img src="img/btalogo.svg" width="200" alt="bta logo"/><span>¿Por qué bogotá?</span></h1>
     <section class="column flex w_100">
         <div class="container">
             <?php for($i=0;$i<count($data);$i++){ ?>
