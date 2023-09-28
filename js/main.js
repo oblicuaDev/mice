@@ -200,7 +200,9 @@ function setCategory(cattype) {
               complement +
               '<input type="checkbox" value="' +
               data[i].tid +
-              '" name="' +
+              '" aria-label="' +
+              filterid +
+              '"  name="' +
               filterid +
               '" /></p>';
             itscontent.append(strtemplate);
