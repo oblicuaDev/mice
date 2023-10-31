@@ -13,7 +13,7 @@ class mice extends bogota
     
     public $domain = "https://www.bogotadc.travel/drpl/es/api/v1";
     public $generalInfo = array();
-    public $language = "";
+    public $language = "es";
     public $production = true;
 
 
