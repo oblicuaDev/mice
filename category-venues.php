@@ -40,28 +40,28 @@
                         ?>
                         <div class="capacitycontainer">
                             <span class="label fw500"><?=$aforo[0]?></span>
-                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" type="hidden" name="maxaudit" id="maxaudit" /><input type="hidden" class="previousval" /></div>
-                            <span class="box"><input type="tel" name="" class="writtenval"/></span>
+                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" type="hidden" aria-label="maxaudit" name="maxaudit" id="maxaudit" /><input type="hidden" aria-label="previousval" class="previousval" /></div>
+                            <span class="box"><input type="tel" aria-label="writtenval" name="#" class="writtenval"/></span>
                         </div>
                         <div class="capacitycontainer">
                             <span class="label fw500"><?=$aforo[1]?></span>
-                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" type="hidden" name="maxaul" id="maxaul" /><input type="hidden" class="previousval" /></div>
-                            <span class="box"><input type="tel" name="" class="writtenval"/></span>
+                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" type="hidden" aria-label="maxaul" name="maxaul" id="maxaul" /><input type="hidden" aria-label="previousval" class="previousval" /></div>
+                            <span class="box"><input type="tel" aria-label="writtenval" name="#" class="writtenval"/></span>
                         </div>
                         <div class="capacitycontainer">
                             <span class="label fw500"><?=$aforo[2]?></span>
-                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" type="hidden" name="maxbanq" id="maxbanq" /><input type="hidden" class="previousval" /></div>
-                            <span class="box"><input type="tel" name="" class="writtenval"/></span>
+                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" aria-label="maxbanq" type="hidden" name="maxbanq" id="maxbanq" /><input type="hidden" arial-label="previousval"  class="previousval" /></div>
+                            <span class="box"><input type="tel" aria-label="writtenval" name="#" class="writtenval"/></span>
                         </div>
                         <div class="capacitycontainer">
                             <span class="label fw500"><?=$aforo[3]?></span>
-                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" type="hidden" name="maxcoc" id="maxcoc" /><input type="hidden" class="previousval" /></div>
-                            <span class="box"><input type="tel" name="" class="writtenval"/></span>
+                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" type="hidden" aria-label="maxcoc" name="maxcoc" id="maxcoc" /><input type="hidden" aria-label="previousval" class="previousval" /></div>
+                            <span class="box"><input type="tel" aria-label="writtenval" name="#" class="writtenval"/></span>
                         </div>
                         <div class="capacitycontainer">
                             <span class="label fw500"><?=$aforo[4]?></span>
-                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" type="hidden" name="maxu" id="maxu" /><input type="hidden" class="previousval" /></div>
-                            <span class="box"><input type="tel" name="" class="writtenval"/></span>
+                            <div class="capacityfilter"><b class="custom-handle ui-slider-handle"><i></i></b><input class="currentvalue" type="hidden" aria-label="maxu" name="maxu" id="maxu" /><input type="hidden" aria-label="previousval" class="previousval" /></div>
+                            <span class="box"><input type="tel" aria-label="writtenval" name="#" class="writtenval"/></span>
                         </div>
                     </div>
                 </div>
